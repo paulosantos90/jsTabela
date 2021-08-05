@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Tabela JS</title>
+    <style>
+        #dfPessoas{font: 14px Verdana; margin-left: 35%; margin-top: 150px;}
+        #dtPessoas{font: 12px Verdana; margin-left: 25%; }
+        table tr td{width: 140px;}
+    </style>
+    <script type="text/javascript" src="jsTabela.js"></script>
+</head>
+<body>
+    <div id="dfLocal">
+        <form name="fLocal">
+            <label>Prédio</label><br/>
+            <input type="text" name="txtPredio"/><br/><br/>
+            <label>Local de trabalho</label><br/>
+            <input type="text" name="txtLocal"/><br/><br/>
+            <input type="button" value="+" onclick="addLocal(txtPredio.value, txtLocal.value)">
+        </form>
+    </div>
+    <br/><br/>
+    <div id="dtLocal">
+        <table id="tbLocal">
+            <thead>
+                <td>Prédio</td>
+                <td>Local de Trabalho</td>
+            </thead>
+        </table>
+    </div>
+</body>
+</html>
